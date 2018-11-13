@@ -1,7 +1,9 @@
 <div class="container">
   <h1>Tasks</h1>
+  <%= link_to "Add new task", tasks_path + "/new" %>
   <% @tasks.each do |task| %>
     <div class="task">
+      <p><%= task.title %></p>
       <%= link_to "More details", task_path(task) %>
       <%= check_box("task", task.completed, {
         checked: task.completed,
@@ -9,4 +11,5 @@
       }) %>
     </div>
   <% end %>
+
 </div>
