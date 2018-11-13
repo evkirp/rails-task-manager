@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Tasks</h1>
+  <% @tasks.each do |task| %>
+    <div class="task">
+      <p class="task__title"><%= task.title %></p>
+      <%= check_box("task", task.completed, {
+        checked: task.completed,
+        class: 'task__completed'
+      }) %>
+    </div>
+  <% end %>
+</div>

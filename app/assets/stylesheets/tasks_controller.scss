@@ -1,3 +1,21 @@
 // Place all the styles related to the TasksController controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.task {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: -1px;
+  overflow: hidden;
+}
+
+
+.task__title {
+  margin: 0;
+  margin-right: 12px;
+}
+
+.task__completed {
+
+}
